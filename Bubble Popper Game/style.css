@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+background-color: rgb(46, 234, 165);
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#panel{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+}
+
+#game{
+margin-top: 200px;
+font-size: 2.9rem;
+font-weight: 900;
+color: red;
+}
+
+#ptop{
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(16, 154, 87);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.elem{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h2{
+    color: white;
+    padding: 0px 7px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.8rem;
+    color: black;
+    background-color: white;
+}
+
+#pbtm{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    height: calc(100%-100px);
+    width: 100%;
+    gap: 18px;
+    padding: 10px 10px;
+}
+#pbtm h1{
+    font-weight: 900;
+    font-size: 2.7rem;
+margin: 170px 0px;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 20px;
+    background-color: rgb(3, 138, 3);
+    
+}
+.bubble:hover{
+    background-color: rgb(3, 91, 19);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1350px){
+    #pbtm{
+        overflow-y: scroll;
+        height: 420px;
+    
+    }
+    #pbtm::-webkit-scrollbar{
+        width: 12px;
+    }
+    #pbtm::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-radius:7px;
+    }
+    
+
+}
