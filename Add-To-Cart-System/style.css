@@ -1,0 +1,247 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;  
+    overflow: hidden;
+    
+}
+#main #navbar{
+    height: 80px;
+    background-color: rgb(209 191 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+
+}
+
+#main #navbar .count{display: flex; gap: 20px   ; z-index: 99;}
+#main #navbar .count .openMenu{
+    display: none;
+}
+#page-1{
+    margin: 10px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+    
+}
+
+
+#page-1 #part-1 img{
+height: 100px;  
+}
+#page-1 #part-1{
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+
+}
+#page-1 #part-1 .cart{
+border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: s;
+    padding: 25px 10px;
+border:  2px solid rgb(209 191 31);
+text-align: center;
+}
+#page-1 #part-1 .cart h3{
+    color: black;
+    font-size: 1.2rem;
+    padding: 20px 0px;
+    width: 300px;
+
+}
+#page-1 #part-1 .cart h2{
+    color: crimson;
+    font-size: 1.2rem;
+padding-bottom: 10px;
+
+}
+
+#page-1 #part-1 .cart button{
+    padding: 7px 60px;
+    background-color:rgb(209 191 31);
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+
+#page-1 #part-1 .cart button:hover{
+    background-color:rgb(183, 169, 46);
+
+}
+#page-1 #part-1 .cart button:hover{
+    cursor: pointer;
+}
+
+
+#page-1 #part-2{    
+width: 800px;    
+margin-right: 20px;
+    
+}
+
+#page-1 #part-2 .my-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+gap: 15px;
+padding: 10px 55px; 
+
+
+}
+#page-1 #part-2 .my-cart .mylist img{
+    height: 55px;
+    width: 60px;
+    border-radius: 26px;
+}
+#page-1 #part-2 .my-cart .mylist{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-right: -50px;
+    border: 2px solid rgb(209 191 31);
+    border-radius: 7px;
+    
+}
+
+#page-1 #part-2 .my-cart .mylist p{
+    color: crimson;
+}
+#page-1 #part-2 .my-cart h3{
+    font-size: 1rem;
+    padding: 20px 0px;
+    width: 200px;
+    
+}
+
+#page-1 #part-2 .my-cart button{
+    font-size: 1.7rem;
+    background-color: transparent;
+    border: none;
+}
+#page-1 #part-2 .my-cart button:hover{
+    cursor: pointer;
+}
+.myCartList{
+    width: 400px;
+    border-radius: 7px;
+    padding: 15px;
+    background-color: rgb(209 191 31);
+    margin-left: 50px;
+}
+.total{
+    border-top: 2px solid rgb(126, 96, 96);
+    margin-top: 10px;
+    width: 400px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+   margin-left: 60px;
+
+}
+.total h1{
+    font-weight: 300;
+font-family: sans-serif;    
+}
+
+.my-cart h1{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-left: -90px;
+}
+
+@media only  screen and (max-width:872px) {
+    #page-1 #part-2{
+        transition: all ease 0.5s;
+        padding-top: 10px;
+        background-color:rgb(245 255 181);
+        z-index: 77;
+       min-height: 100%;
+        position: absolute;    
+        top: 0;
+        right: -200%;
+        width: 630px;    
+        margin-right: 0px;
+            
+        }
+ 
+        #page-1 #part-2 .my-cart .mylist{
+
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 400px;
+            margin-right: 160px;
+            border: 2px solid rgb(209 191 31);
+            border-radius: 7px;
+            
+        }
+        .myCartList{
+            width: 400px;
+            border-radius: 7px;
+            padding: 15px;
+            background-color: rgb(209 191 31);
+            margin-left: 20px;
+        }
+        .total{
+            border-top: 2px solid rgb(126, 96, 96);
+            margin-top: 10px;
+            width: 400px;
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+           margin-left: 30px;
+        
+        }
+        #main #navbar .count .openMenu{
+            display: block;
+        }
+}
+@media only  screen and (max-width:428px){
+    #page-1 #part-2{
+        transition: all ease 0.5s;
+        padding-top: 10px;
+        background-color:rgb(245 255 181);
+        z-index: 77;
+       min-height: 100%;
+        position: absolute;    
+        top: 0;
+        right: -200%;
+        width: 500px;    
+      
+        }   
+        #page-1 #part-2 .my-cart .mylist{
+
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 370px;
+            margin-right: 70px;
+            border: 2px solid rgb(209 191 31);
+            border-radius: 7px;
+            
+        }
+}
