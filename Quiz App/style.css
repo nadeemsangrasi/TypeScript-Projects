@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0%;
     padding: 0%;
@@ -99,4 +100,107 @@ html, body{
     font-family: sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
+=======
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    
+}
+#page-1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page-1 .btns button{
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 5px 25px;
+    border-radius: 7px;
+    color: black;
+    margin: 20px 10px;
+    border: 2px solid gray;
+}
+#page-1 .btns button:active{
+    background-color: white;
+    color: black;
+}
+#page-1 .btns button:hover{
+    cursor: pointer;
+    background-color:rgb(192, 244, 247);
+}
+#score{
+    padding: 12px 0px;
+}
+.container h3{
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: sans-serif;
+    padding: 18px 0px;
+}
+
+.container .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#page-1 .container .options .option{
+    border: 3px solid gray;
+    width: 100%;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#page-1 .container .options .option button{
+    padding: 6px 12px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    font-weight: 550;
+    background-color: transparent;
+    border: 3px solid gray;
+    
+}
+#page-1 .container .options .option:hover{
+    background-color: rgb(192, 244, 247);
+    cursor: pointer;
+    transition: all ease-in 0.1s;
+}
+#page-1 .container .options .option button:hover{
+    cursor: pointer;
+}
+#page-1 .container .options .option button:active{
+    background-color: black;
+    color: white;
+
+}
+#page-1 .container .options .option span{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.corrects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    width: 490px;
+}
+.corrects h1{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+>>>>>>> 6b70cfbcce2da265b8e716a40d6a23b5e3b75f8a
 }
